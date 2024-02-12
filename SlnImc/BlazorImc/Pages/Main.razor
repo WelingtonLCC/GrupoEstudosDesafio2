@@ -8,31 +8,40 @@
 <div class="container center flex flex-colum padding5">
     <div class="text-center header-top">
         <h2>Cálculo de IMC</h2>
+        <br />
     </div>
 
     <div class="width100 ">
-        <EditForm Model="Model" OnValidSubmit="salvar" class="input-position">
+        <EditForm Model="Model" accept="#" method="post" class="input-position">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
             <div class="block-input">
-                <div class="">
-                    <InputNumber @bind-Value="Model.Altura" placeholder="Altura" />
+                <div class="mb-4">
+                   
+                    <InputNumber @bind-Value="Model.Altura" name="altura" type="text" placeholder="Altura" class="form-control" />
+                    <ValidationMessage For="@(()=>Model.Altura)" />
                 </div>
 
-                <div class="">
-                    <InputNumber @bind-Value="Model.Peso" placeholder="Peso" />
+                <div class="mb-4">
+                    <InputNumber @bind-Value="Model.Peso" name="peso" type="text" placeholder="Peso" class="form-control" />
+                    <ValidationMessage For="@(()=>Model.Peso)" />
                 </div>
 
-                <div class="">
-                    <InputText @bind-Value="Model.Sexo" placeholder="Sexo" />
+                <div class="mb-4">
+                    <InputText @bind-Value="Model.Sexo" name="sexo" type="text" placeholder="Sexo" class="form-control" />
+                    <ValidationMessage For="@(()=>Model.Sexo)" />
                 </div>
             </div>
 
-            <div class="block-checkbox">
-                <input type="checkbox" name="maisIdade" id="idade">
-                <label for="maisidade">Eu tenho 65 anos ou mais</label>
+            <div class="mb-4">
+                <div class="form-check">
+                    <InputCheckbox id="older" class="form-check-input" type="checkbox" @bind-Value="Model.Idoso" />
+                    <label for="older" class="form-check-label">Eu tenho 65 anos ou mais</label>
+                </div>
             </div>
 
             <div class="block-button ">
-                <button type="submit" class="width100 bg-aqua"><b>Cálcular meu IMC</b></button>
+                <button @onclick="CalcularImc" class="width100 bg-aqua"><b>Cálcular meu IMC</b></button>
             </div>
 
             <div class="block-button">
@@ -40,13 +49,21 @@
             </div>
         </EditForm>
     </div>
+    @foreach(var valor in historico){
+        <h2>@valor</h2>
+    }
+    
+
+
 </div>
 
 @code {
-    protected Imc Model { get; set; } = new();
-    public List<Imc> ListModels { get; set; } = new();
+    public Imc Model { get; set; } = new();
+    public List<string> historico { get; set; } = new();
+    private string resultado = string.Empty;
+    private double imc;
 
-    protected void salvar()
+    protected void CalcularImc()
     {
         Model = new Imc
             {
@@ -55,8 +72,36 @@
                 Sexo = Model.Sexo
             };
 
-        ListModels.Add(Model);
-        Navigation.NavigateTo("/history");
+        imc = Model.Peso / Math.Pow(Model.Altura, 2);
+
+        if (imc < 18.5)
+        {
+            resultado = "Abaixo do peso";
+        }
+        else if (imc >= 18.5 && imc < 24.9)
+        {
+            resultado = "Peso normal";
+        }
+        else if (imc >= 25 && imc < 29.9)
+        {
+            resultado = "Sobrepeso";
+        }
+        else if (imc >= 30 && imc < 34.9)
+        {
+            resultado = "Obesidade grau 1";
+        }
+        else if (imc >= 35 && imc < 39.9)
+        {
+            resultado = "Obesidade grau 2";
+        }
+        else
+        {
+            resultado = "Obesidade grau 3";
+        }
+
+        historico.Add(resultado);
+        //Navigation.NavigateTo("/history");
+
     }
 
     protected override Task OnInitializedAsync()
