@@ -1,0 +1,66 @@
+﻿@page "/main"
+@inject NavigationManager Navigation
+
+
+
+<PageTitle>IMC</PageTitle>
+
+<div class="container center flex flex-colum padding5">
+    <div class="text-center header-top">
+        <h2>Cálculo de IMC</h2>
+    </div>
+
+    <div class="width100 ">
+        <EditForm Model="Model" OnValidSubmit="salvar" class="input-position">
+            <div class="block-input">
+                <div class="">
+                    <InputNumber @bind-Value="Model.Altura" placeholder="Altura" />
+                </div>
+
+                <div class="">
+                    <InputNumber @bind-Value="Model.Peso" placeholder="Peso" />
+                </div>
+
+                <div class="">
+                    <InputText @bind-Value="Model.Sexo" placeholder="Sexo" />
+                </div>
+            </div>
+
+            <div class="block-checkbox">
+                <input type="checkbox" name="maisIdade" id="idade">
+                <label for="maisidade">Eu tenho 65 anos ou mais</label>
+            </div>
+
+            <div class="block-button ">
+                <button type="submit" class="width100 bg-aqua"><b>Cálcular meu IMC</b></button>
+            </div>
+
+            <div class="block-button">
+                <button class="width100 bg-white" type="button"><b>Entenda o cálculo</b></button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    protected Imc Model { get; set; } = new();
+    public List<Imc> ListModels { get; set; } = new();
+
+    protected void salvar()
+    {
+        Model = new Imc
+            {
+                Peso = Model.Peso,
+                Altura = Model.Altura,
+                Sexo = Model.Sexo
+            };
+
+        ListModels.Add(Model);
+        Navigation.NavigateTo("/history");
+    }
+
+    protected override Task OnInitializedAsync()
+    {
+        return base.OnInitializedAsync();
+    }
+}

@@ -1034,3 +1034,4 @@ C:\Users\Raul da Silva\Documents\MEGA\JornadaDev\BaltaIo\CarnaCode_Challenge\Gru
 C:\Users\Raul da Silva\Documents\MEGA\JornadaDev\BaltaIo\CarnaCode_Challenge\GrupoEstudosDesafio2\SlnImc\BlazorImc\obj\Debug\net8.0\refint\BlazorImc.dll
 C:\Users\Raul da Silva\Documents\MEGA\JornadaDev\BaltaIo\CarnaCode_Challenge\GrupoEstudosDesafio2\SlnImc\BlazorImc\obj\Debug\net8.0\BlazorImc.pdb
 C:\Users\Raul da Silva\Documents\MEGA\JornadaDev\BaltaIo\CarnaCode_Challenge\GrupoEstudosDesafio2\SlnImc\BlazorImc\obj\Debug\net8.0\ref\BlazorImc.dll
+C:\Users\Raul da Silva\Documents\MEGA\JornadaDev\BaltaIo\CarnaCode_Challenge\GrupoEstudosDesafio2\SlnImc\BlazorImc\obj\Debug\net8.0\scopedcss\Pages\Main.razor.rz.scp.css
