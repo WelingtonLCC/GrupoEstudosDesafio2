@@ -2,7 +2,6 @@
 @inject NavigationManager Navigation
 
 
-
 <PageTitle>IMC</PageTitle>
 
 <div class="container center flex flex-colum padding5">
@@ -45,16 +44,10 @@
             </div>
 
             <div class="block-button">
-                <button class="width100 bg-white" type="button"><b>Entenda o cálculo</b></button>
+                <button @onclick="EntendaCalcImc" class="width100 bg-white" type="button"><b>Entenda o cálculo</b></button>
             </div>
         </EditForm>
     </div>
-    @foreach(var valor in historico){
-        <h2>@valor</h2>
-    }
-    
-
-
 </div>
 
 @code {
@@ -100,12 +93,18 @@
         }
 
         historico.Add(resultado);
-        //Navigation.NavigateTo("/history");
+        Navigation.NavigateTo($"history/{string.Join(',', historico)}");
 
     }
 
-    protected override Task OnInitializedAsync()
+    private void EntendaCalcImc()
     {
-        return base.OnInitializedAsync();
+        Navigation.NavigateTo("https://saude.abril.com.br/medicina/como-calcular-o-imc", forceLoad: true);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.CompletedTask; 
+        Model = new(); 
     }
 }
