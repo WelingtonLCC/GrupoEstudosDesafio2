@@ -1,4 +1,5 @@
 ﻿@page "/history"
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 @using BlazorImc.Service
 @inject SharedService Service
 
@@ -66,7 +67,7 @@
 
 
 @code {
-
+    const string key = "keyHist";
     public List<string> ListHistResult { get; set; } = new();
     public FiltroHistorico ModelFiltro { get; set; } = new();
     private List<string> ListConsulta = new();
@@ -75,6 +76,9 @@
 
     protected override async Task OnInitializedAsync()
     {
+        if(Service.ListResult.Count <= 0)
+            Service.inicializaResultado(await localStorage.GetItemAsync<List<string>>(key));
+        
         await Task.CompletedTask;
         ListHistResult = Service.ListResult;
        
