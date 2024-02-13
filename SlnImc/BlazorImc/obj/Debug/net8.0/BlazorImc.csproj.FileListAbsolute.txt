@@ -2073,3 +2073,4 @@ C:\Apache24\htdocs\Raul\GrupoEstudosDesafio2\SlnImc\BlazorImc\obj\Debug\net8.0\s
 C:\Apache24\htdocs\Raul\GrupoEstudosDesafio2\SlnImc\BlazorImc\obj\Debug\net8.0\service-worker-assets.js.build
 C:\Apache24\htdocs\Raul\GrupoEstudosDesafio2\SlnImc\BlazorImc\obj\Debug\net8.0\BlazorImc.csproj.CopyComplete
 C:\Apache24\htdocs\Raul\GrupoEstudosDesafio2\SlnImc\BlazorImc\obj\Debug\net8.0\ref\BlazorImc.dll
+C:\Users\Raul da Silva\Documents\MEGA\JornadaDev\BaltaIo\CarnaCode_Challenge\GrupoEstudosDesafio2\SlnImc\BlazorImc\obj\Debug\net8.0\scopedcss\Pages\History.razor.rz.scp.css

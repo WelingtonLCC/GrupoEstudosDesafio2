@@ -1,5 +1,6 @@
-﻿@page "/main"
+﻿@page "/"
 @inject NavigationManager Navigation
+@inject SharedService Service
 
 
 <PageTitle>IMC</PageTitle>
@@ -11,7 +12,7 @@
     </div>
 
     <div class="width100 ">
-        <EditForm Model="Model" accept="#" method="post" class="input-position">
+        <EditForm Model="Model" OnValidSubmit="CalcularImc" accept="#" method="post" class="input-position">
             <DataAnnotationsValidator />
             <ValidationSummary />
             <div class="block-input">
@@ -52,7 +53,6 @@
 
 @code {
     public Imc Model { get; set; } = new();
-    public List<string> historico { get; set; } = new();
     private string resultado = string.Empty;
     private double imc;
 
@@ -73,7 +73,7 @@
         }
         else if (imc >= 18.5 && imc < 24.9)
         {
-            resultado = "Peso normal";
+            resultado = "Peso Ideal";
         }
         else if (imc >= 25 && imc < 29.9)
         {
@@ -92,8 +92,8 @@
             resultado = "Obesidade grau 3";
         }
 
-        historico.Add(resultado);
-        Navigation.NavigateTo($"history/{string.Join(',', historico)}");
+        Service.AdicionarResult(resultado); 
+        Navigation.NavigateTo($"history/");
 
     }
 

@@ -13,55 +13,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = BlazorImc
 build_property.RootNamespace = BlazorImc
-build_property.ProjectDir = C:\Apache24\htdocs\Raul\GrupoEstudosDesafio2\SlnImc\BlazorImc\
+build_property.ProjectDir = C:\Users\Raul da Silva\Documents\MEGA\JornadaDev\BaltaIo\CarnaCode_Challenge\GrupoEstudosDesafio2\SlnImc\BlazorImc\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Apache24\htdocs\Raul\GrupoEstudosDesafio2\SlnImc\BlazorImc
+build_property.MSBuildProjectDirectory = C:\Users\Raul da Silva\Documents\MEGA\JornadaDev\BaltaIo\CarnaCode_Challenge\GrupoEstudosDesafio2\SlnImc\BlazorImc
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Apache24/htdocs/Raul/GrupoEstudosDesafio2/SlnImc/BlazorImc/App.razor]
+[C:/Users/Raul da Silva/Documents/MEGA/JornadaDev/BaltaIo/CarnaCode_Challenge/GrupoEstudosDesafio2/SlnImc/BlazorImc/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-<<<<<<< HEAD
 [C:/Users/Raul da Silva/Documents/MEGA/JornadaDev/BaltaIo/CarnaCode_Challenge/GrupoEstudosDesafio2/SlnImc/BlazorImc/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Raul da Silva/Documents/MEGA/JornadaDev/BaltaIo/CarnaCode_Challenge/GrupoEstudosDesafio2/SlnImc/BlazorImc/_Imports.razor]
-=======
-[C:/Apache24/htdocs/Raul/GrupoEstudosDesafio2/SlnImc/BlazorImc/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Apache24/htdocs/Raul/GrupoEstudosDesafio2/SlnImc/BlazorImc/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Apache24/htdocs/Raul/GrupoEstudosDesafio2/SlnImc/BlazorImc/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Apache24/htdocs/Raul/GrupoEstudosDesafio2/SlnImc/BlazorImc/_Imports.razor]
->>>>>>> upstream/main
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Apache24/htdocs/Raul/GrupoEstudosDesafio2/SlnImc/BlazorImc/Layout/MainLayout.razor]
+[C:/Users/Raul da Silva/Documents/MEGA/JornadaDev/BaltaIo/CarnaCode_Challenge/GrupoEstudosDesafio2/SlnImc/BlazorImc/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-wev6ueyd4x
 
-[C:/Apache24/htdocs/Raul/GrupoEstudosDesafio2/SlnImc/BlazorImc/Layout/NavMenu.razor]
+[C:/Users/Raul da Silva/Documents/MEGA/JornadaDev/BaltaIo/CarnaCode_Challenge/GrupoEstudosDesafio2/SlnImc/BlazorImc/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-sl303sop46
 
-[C:/Apache24/htdocs/Raul/GrupoEstudosDesafio2/SlnImc/BlazorImc/Pages/History.razor]
+[C:/Users/Raul da Silva/Documents/MEGA/JornadaDev/BaltaIo/CarnaCode_Challenge/GrupoEstudosDesafio2/SlnImc/BlazorImc/Pages/History.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGlzdG9yeS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-vixzye6hca
 
-[C:/Apache24/htdocs/Raul/GrupoEstudosDesafio2/SlnImc/BlazorImc/Pages/Main.razor]
+[C:/Users/Raul da Silva/Documents/MEGA/JornadaDev/BaltaIo/CarnaCode_Challenge/GrupoEstudosDesafio2/SlnImc/BlazorImc/Pages/Main.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-r6627garuk
