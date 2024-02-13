@@ -1,5 +1,6 @@
 ﻿@page "/"
 @inject NavigationManager Navigation
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 @inject SharedService Service
 
 
@@ -52,11 +53,12 @@
 </div>
 
 @code {
+    const string key = "keyHist";
     public Imc Model { get; set; } = new();
     private string resultado = string.Empty;
     private double imc;
 
-    protected void CalcularImc()
+    protected async void CalcularImc()
     {
         Model = new Imc
             {
@@ -92,7 +94,10 @@
             resultado = "Obesidade grau 3";
         }
 
-        Service.AdicionarResult(resultado); 
+        Service.AdicionarResult(resultado);
+
+        await localStorage.SetItemAsync(key, Service.ListResult);
+
         Navigation.NavigateTo($"history/");
 
     }
@@ -104,6 +109,8 @@
 
     protected override async Task OnInitializedAsync()
     {
+
+        Service.inicializaResultado(await localStorage.GetItemAsync<List<string>>(key));
         await Task.CompletedTask; 
         Model = new(); 
     }

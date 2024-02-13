@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj": {}
+    "C:\\Projects\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj": {
+    "C:\\Projects\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj",
+        "projectUniqueName": "C:\\Projects\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj",
         "projectName": "BlazorImc",
-        "projectPath": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj",
-        "packagesPath": "C:\\Users\\Raul da Silva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\",
+        "projectPath": "C:\\Projects\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj",
+        "packagesPath": "C:\\Users\\Welington\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Raul da Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Welington\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +40,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[8.0.1, )"

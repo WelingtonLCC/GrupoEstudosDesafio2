@@ -8,5 +8,11 @@
         {
             ListResult.Add(result);
         }
+
+        public void inicializaResultado(List<string> lista)
+        {
+            if(lista != null)
+                ListResult = lista;
+        }
     }
 }
