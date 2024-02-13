@@ -1,4 +1,6 @@
 ﻿@page "/history"
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+
 <PageTitle>Histórico</PageTitle>
 
 <div id="history">
@@ -63,25 +65,17 @@
 
 
 @code {
+    const string key = "keyHist";
     public FiltroHistorico ModelFiltro = new();
 
     public Historico Model { get; set; } = new();
     public List<Historico> ListHistoricos = new();
     public List<Historico> ListHistoricosFiltrados = new();
 
-    protected override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
-        PreencherHistorico();
+        ListHistoricos = await localStorage.GetItemAsync<List<Historico>>(key);
         FiltrarHistorico();
-
-        return base.OnInitializedAsync();
-    }
-
-    public void PreencherHistorico()
-    {
-        ListHistoricos.Add(new Historico { PesoIdeal = true, DataTempo = "8m atrás", TextoResultado = "Peso normal" });
-        ListHistoricos.Add(new Historico { PesoIdeal = true, DataTempo = "23/10/2023", TextoResultado = "Peso acima" });
-        ListHistoricos.Add(new Historico { PesoIdeal = false, DataTempo = "12/02/2024", TextoResultado = "Peso abaixo" });
     }
 
     public void FiltrarHistorico()

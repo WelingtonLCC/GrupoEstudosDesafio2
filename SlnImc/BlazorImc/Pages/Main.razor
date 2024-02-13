@@ -1,7 +1,6 @@
-﻿@page "/main"
+﻿@page "/"
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 @inject NavigationManager Navigation
-
-
 
 <PageTitle>IMC</PageTitle>
 
@@ -58,12 +57,14 @@
 </div>
 
 @code {
+    const string key = "keyHist";
     public Imc Model { get; set; } = new();
     public List<string> historico { get; set; } = new();
     private string resultado = string.Empty;
-    private double imc;
+    private double? imc;
+    private List<Historico> listHistorico { get; set; } = new();
 
-    protected void CalcularImc()
+    protected async void CalcularImc()
     {
         Model = new Imc
             {
@@ -71,8 +72,7 @@
                 Altura = Model.Altura,
                 Sexo = Model.Sexo
             };
-
-        imc = Model.Peso / Math.Pow(Model.Altura, 2);
+        imc = Model.Peso / (Model.Altura * Model.Altura);
 
         if (imc < 18.5)
         {
@@ -100,12 +100,26 @@
         }
 
         historico.Add(resultado);
+
+        var novo = new Historico
+        {
+            PesoIdeal = true,
+            DataTempo = "hhhh",
+            TextoResultado = resultado
+        };
+
+        if (listHistorico == null)
+            listHistorico = new List<Historico>();
+
+        listHistorico.Add(novo);
+
+        await localStorage.SetItemAsync(key, listHistorico);
         //Navigation.NavigateTo("/history");
 
     }
 
-    protected override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
-        return base.OnInitializedAsync();
+        listHistorico = await localStorage.GetItemAsync<List<Historico>>(key);
     }
 }
