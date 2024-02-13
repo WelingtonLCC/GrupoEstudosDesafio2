@@ -21,7 +21,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -825,7 +825,7 @@
       "url": "_framework\/System.Private.CoreLib.wasm"
     },
     {
-      "hash": "sha256-mef8UU0yBP8VMzRFOk45tny0G3qw7NZAbXKY7Jrka7Y=",
+      "hash": "sha256-KvsgBTM7LP4s7PmcsCi6HwbA3QzqaRyPReu9K9Kqq9o=",
       "url": "_framework\/dotnet.js"
     },
     {
@@ -833,16 +833,16 @@
       "url": "_framework\/dotnet.js.map"
     },
     {
-      "hash": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U=",
-      "url": "_framework\/dotnet.native.8.0.1.t6acvm421r.js"
+      "hash": "sha256-\/FRE1F7iOJMliyxIpPMnfweHCNK94rOnW0XK2E11PxU=",
+      "url": "_framework\/dotnet.native.8.0.1.gzbxugmxn2.js"
     },
     {
       "hash": "sha256-dqpunZywlYy86b4O6ZjONasmG+4FH0P17FZ0OIf\/lIg=",
       "url": "_framework\/dotnet.native.wasm"
     },
     {
-      "hash": "sha256-HZOoaGpz9ekMa\/oSmeApSKp3DXNdVUq2UBqsTIIiN8A=",
-      "url": "_framework\/dotnet.runtime.8.0.1.09490rdf3r.js"
+      "hash": "sha256-ZNMNd1DBE\/dP8jtdrJU916p\/AA5oF8KGmD41LXbZuyc=",
+      "url": "_framework\/dotnet.runtime.8.0.1.y5q6gxgtu2.js"
     },
     {
       "hash": "sha256-khLzanqbH5Dtt+TcPt8dgO09A5LFegoLIGnoOLlPesI=",
@@ -861,17 +861,17 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-lQxwOoM3Fx3ZG90AQ58bFlOXpGtYH\/59+WPd2QCQBHE=",
+      "hash": "sha256-5tATq0wqZhUfGAj0kpP+jkRSLNvuATJ10RLtN\/FGEuA=",
       "url": "_framework\/BlazorImc.wasm"
     },
     {
-      "hash": "sha256-\/zzQWk1p1suNAlXr8z0qMWGHIDJc68G4SHP4jmBNEn4=",
+      "hash": "sha256-ltW9hlD\/uMHC53BgkHdRYf8hsB5h\/S2o0yvEnSlhIMw=",
       "url": "_framework\/BlazorImc.pdb"
     },
     {
-      "hash": "sha256-sBaXjEaVFrRXWJHGVzatDlDjLpbdDYJIarZyYZlEE7I=",
+      "hash": "sha256-Ka9SjCpwHTGUIIdTlR21W+P1sc3iUO4PRvm86i9vR8Y=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "PaAYI5aX"
+  "version": "\/\/GRlSA3"
 };

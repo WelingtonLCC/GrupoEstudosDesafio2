@@ -2,6 +2,6 @@
 {
     public class Historico
     {
-        public DateTime DataTempo { get; set; }
+        public DateTime DataTempo { get; set; } = DateTime.Today;
     }
 }

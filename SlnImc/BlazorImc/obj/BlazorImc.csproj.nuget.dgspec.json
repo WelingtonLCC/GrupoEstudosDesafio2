@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj": {}
+    "C:\\Apache24\\htdocs\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj": {
+    "C:\\Apache24\\htdocs\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj",
+        "projectUniqueName": "C:\\Apache24\\htdocs\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj",
         "projectName": "BlazorImc",
-        "projectPath": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj",
-        "packagesPath": "C:\\Users\\Raul da Silva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\",
+        "projectPath": "C:\\Apache24\\htdocs\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\BlazorImc.csproj",
+        "packagesPath": "C:\\Users\\Jefferson\\.nuget\\packages\\",
+        "outputPath": "C:\\Apache24\\htdocs\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Raul da Silva\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Jefferson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
