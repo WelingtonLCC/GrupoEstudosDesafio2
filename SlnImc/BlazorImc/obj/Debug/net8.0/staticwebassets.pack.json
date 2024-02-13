@@ -1,75 +1,75 @@
 {
   "Files": [
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\Debug\\net8.0\\compressed\\pbf3chm4a6.gz",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\Debug\\net8.0\\compressed\\ibpjpir0hd.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorImc.styles.css",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BlazorImc.styles.css",
       "PackagePath": "staticwebassets\\BlazorImc.styles.css"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\Debug\\net8.0\\service-worker-assets.js",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\Debug\\net8.0\\service-worker-assets.js",
       "PackagePath": "staticwebassets\\service-worker-assets.js"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\Debug\\net8.0\\service-worker\\service-worker.published.js",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\obj\\Debug\\net8.0\\service-worker\\service-worker.published.js",
       "PackagePath": "staticwebassets\\service-worker.js"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\assets\\app.fig",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\assets\\app.fig",
       "PackagePath": "staticwebassets\\assets\\app.fig"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\assets\\icon-no-bg.png",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\assets\\icon-no-bg.png",
       "PackagePath": "staticwebassets\\assets\\icon-no-bg.png"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\assets\\icon.png",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\assets\\icon.png",
       "PackagePath": "staticwebassets\\assets\\icon.png"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\assets\\texto-para-publicacao-nas-redes-sociais.txt",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\assets\\texto-para-publicacao-nas-redes-sociais.txt",
       "PackagePath": "staticwebassets\\assets\\texto-para-publicacao-nas-redes-sociais.txt"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\icon-512.png",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\icon-512.png",
       "PackagePath": "staticwebassets\\icon-512.png"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\manifest.webmanifest",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\manifest.webmanifest",
       "PackagePath": "staticwebassets\\manifest.webmanifest"
     },
     {
-      "Id": "C:\\Apache24\\htdocs\\Raul\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\sample-data\\weather.json",
+      "Id": "C:\\Users\\Raul da Silva\\Documents\\MEGA\\JornadaDev\\BaltaIo\\CarnaCode_Challenge\\GrupoEstudosDesafio2\\SlnImc\\BlazorImc\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {

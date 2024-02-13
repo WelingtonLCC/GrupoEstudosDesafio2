@@ -1,4 +1,7 @@
 ﻿@page "/history"
+@inject SharedService Service
+
+
 <PageTitle>Histórico</PageTitle>
 
 <div id="history">
@@ -13,49 +16,48 @@
 
         <div class="mb-1">
             <EditForm Model="ModelFiltro">
-                <InputText class="form-control" @bind-Value="ModelFiltro.Filtro" @oninput="FiltrarHistorico"></InputText>
+                <InputText class="form-control shearch-input" @bind-Value="ModelFiltro.Filtro" @oninput="FiltrarHistorico" placeholder="Pesquisar..." />
             </EditForm>
 
         </div>
 
         <div class="box-blocos mt-2">
 
-            @foreach (var historico in ListHistoricosFiltrados)
-             {
-                if (historico.PesoIdeal)
-                { 
+            @foreach (var historico in ListHistResult)
+            {
+                if (string.Equals(historico, "Peso Ideal"))
+                {
                     <div class="py-1 bloco-item flex">
                         <div class="bloco-q"></div>
                         <div class="pl-1 width100">
                             <div class="flex justify-between mb-05">
-                                <h4 class="flex">Peso ideal <span class="icon-peso icon-peso-verde">&#10003;</span></h4>
-                                <span class="tempo">8m atrás</span>
+                                <h4 class="flex"> @historico<span class="icon-peso icon-peso-verde">&#10003;</span></h4>
+                                <span class="tempo">@Model.DataTempo</span>
                             </div>
                             <div>
-                                <p>
-                                    Parabéns, você está no seu peso ideal,
-                                    continue mantendo este estilo!
+                                <p style="text-align: left;">
+                                    "Parabéns, você está no seu peso ideal, continue mantendo este estilo!";
                                 </p>
                             </div>
                         </div>
                     </div>
                 }
                 else
-                { 
+                {
                     <div class="py-1 bloco-item flex">
                         <div class="bloco-q"></div>
                         <div class="pl-1 width100">
                             <div class="flex justify-between mb-05">
-                                <h4 class="flex">Sobrepeso <span class="icon-peso icon-peso-vermelho">&minus;</span></h4>
-                                <span class="data">12/10/2023</span>
+                                <h4 class="flex">@historico<span class="icon-peso icon-peso-vermelho">&minus;</span></h4>
+                                <span class="data">@Model.DataTempo</span>
                             </div>
                             <div>
-                                <p>Estamos quase lá! Faça alguns ajustes para ficar no peso ideal</p>
+                                <p style="text-align: left;">Estamos quase lá! Faça alguns ajustes para ficar no peso ideal</p>
                             </div>
                         </div>
                     </div>
-                 }
-            } 
+                }
+            }
         </div>
 
     </div>
@@ -63,40 +65,28 @@
 
 
 @code {
-    public FiltroHistorico ModelFiltro = new();
+
+    public List<string> ListHistResult { get; set; } = new();
+    public FiltroHistorico ModelFiltro { get; set; } = new();
+    private List<string> ListConsulta = new();
 
     public Historico Model { get; set; } = new();
-    public List<Historico> ListHistoricos = new();
-    public List<Historico> ListHistoricosFiltrados = new();
 
-    protected override Task OnInitializedAsync()
+    protected override async Task OnInitializedAsync()
     {
-        PreencherHistorico();
-        FiltrarHistorico();
-
-        return base.OnInitializedAsync();
+        await Task.CompletedTask;
+        ListHistResult = Service.ListResult;
+       
     }
 
-    public void PreencherHistorico()
+    private void FiltrarHistorico()
     {
-        ListHistoricos.Add(new Historico { PesoIdeal = true, DataTempo = "8m atrás", TextoResultado = "Peso normal" });
-        ListHistoricos.Add(new Historico { PesoIdeal = true, DataTempo = "23/10/2023", TextoResultado = "Peso acima" });
-        ListHistoricos.Add(new Historico { PesoIdeal = false, DataTempo = "12/02/2024", TextoResultado = "Peso abaixo" });
-    }
-
-    public void FiltrarHistorico()
-    {
-        ListHistoricosFiltrados = ListHistoricos;
         if (!string.IsNullOrEmpty(ModelFiltro.Filtro.Trim()))
         {
-            ListHistoricosFiltrados = ListHistoricos
-            .Where(historico => historico.TextoResultado
-            .ToLower()
-            .Contains(ModelFiltro.Filtro.ToLower()))
-            .ToList();
-
-            var teste = ModelFiltro.Filtro;
-            
+            ListConsulta = ListHistResult
+                .Where(item => item.Contains(ModelFiltro.Filtro, StringComparison.OrdinalIgnoreCase))
+                .ToList();
         }
     }
+
 }

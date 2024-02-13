@@ -1,6 +1,6 @@
-﻿@page "/main"
+﻿@page "/"
 @inject NavigationManager Navigation
-
+@inject SharedService Service
 
 
 <PageTitle>IMC</PageTitle>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="width100 ">
-        <EditForm Model="Model" accept="#" method="post" class="input-position">
+        <EditForm Model="Model" OnValidSubmit="CalcularImc" accept="#" method="post" class="input-position">
             <DataAnnotationsValidator />
             <ValidationSummary />
             <div class="block-input">
@@ -45,21 +45,14 @@
             </div>
 
             <div class="block-button">
-                <button class="width100 bg-white" type="button"><b>Entenda o cálculo</b></button>
+                <button @onclick="EntendaCalcImc" class="width100 bg-white" type="button"><b>Entenda o cálculo</b></button>
             </div>
         </EditForm>
     </div>
-    @foreach(var valor in historico){
-        <h2>@valor</h2>
-    }
-    
-
-
 </div>
 
 @code {
     public Imc Model { get; set; } = new();
-    public List<string> historico { get; set; } = new();
     private string resultado = string.Empty;
     private double imc;
 
@@ -80,7 +73,7 @@
         }
         else if (imc >= 18.5 && imc < 24.9)
         {
-            resultado = "Peso normal";
+            resultado = "Peso Ideal";
         }
         else if (imc >= 25 && imc < 29.9)
         {
@@ -99,13 +92,19 @@
             resultado = "Obesidade grau 3";
         }
 
-        historico.Add(resultado);
-        //Navigation.NavigateTo("/history");
+        Service.AdicionarResult(resultado); 
+        Navigation.NavigateTo($"history/");
 
     }
 
-    protected override Task OnInitializedAsync()
+    private void EntendaCalcImc()
     {
-        return base.OnInitializedAsync();
+        Navigation.NavigateTo("https://saude.abril.com.br/medicina/como-calcular-o-imc", forceLoad: true);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.CompletedTask; 
+        Model = new(); 
     }
 }
